@@ -42,7 +42,7 @@ end
 
 	private
 	def user_params
-      params.require(:user).permit(:lastname, :firstname, :email, :password, :age, :phone, :coutry, :city, :street, :apt, :link, :avatar, :gender)
+      params.require(:user).permit(:lastname, :firstname, :email, :password, :age, :phone, :country, :city, :street, :apt, :link, :avatar, :gender)
   end
 
     def user_session

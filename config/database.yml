@@ -20,9 +20,7 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  #database: db/production.sqlite3
-  database: postgresql-convex-72913_production
-  username: postgresql-convex-72913'
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  production:
+<<: *default
+database: db/production.sqlite3
+
